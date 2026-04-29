@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<view template="ta_mcp_admin:/template/mcpadmin.html" type="html">
+  <label>MCP Tool Admin</label>
+</view>

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<view template="ta_mcp_admin:/template/setup.html" type="html">
+  <label>TA MCP Admin Setup</label>
+</view>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>TA MCP Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="${make_url('/static/img/favicon.ico', appendcachebust=true)}" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="${make_url('/config?autoload=1', appendcachebust=true)}" crossorigin="use-credentials"></script>
+    <script src="${make_url('/static/js/i18n.js', appendcachebust=true)}"></script>
+    <script src="${make_url('/i18ncatalog?autoload=1', appendcachebust=true)}"></script>
+    <script>
+      __splunkd_partials__ = ${json_decode(splunkd)};
+    </script>
+    <script src="${make_url('/static/app/ta_mcp_admin/build/runtime.js', appendcachebust=true)}"></script>
+    <script src="${make_url('/static/app/ta_mcp_admin/build/vendors.js', appendcachebust=true)}"></script>
+    <script src="${make_url('/static/app/ta_mcp_admin/build/upload.js', appendcachebust=true)}"></script>
+  </body>
+</html>
